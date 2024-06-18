@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){var n,t=document.querySelector("ul"),e=function(n){return parseInt(n.dataset.salary.replace(/[$,]/g,""),10)};(n=Array.from(t.children)).sort(function(n,t){return e(t)-e(n)}),t.innerHTML="",n.forEach(function(n){return t.appendChild(n)}),Array.from(t.children).map(function(n){return{name:n.textContent.trim(),position:n.dataset.position,salary:e(n),age:parseInt(n.dataset.age,10)}})});
+//# sourceMappingURL=index.d61c7e15.js.map
